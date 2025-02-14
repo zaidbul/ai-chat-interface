@@ -12,9 +12,7 @@ import { openai } from "@ai-sdk/openai";
 import { streamText } from "ai";
 
 // Ensure the route runs on the Edge for streaming support
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
 export async function POST(req: NextRequest) {
   try {
